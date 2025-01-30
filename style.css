@@ -76,17 +76,43 @@ section{
 }
 .offer{
     background-image: url('images/vegetable-offer.png') ,linear-gradient(321deg, rgba(239,235,227,1) 0%, rgba(23,152,0,1) 100%);
-    background-size: 50%, cover;
+    background-size: 300px, cover;
     background-repeat: no-repeat;
     background-position: bottom right;
 }
 .product{
     padding: 16px;
     border-radius: 12px;
-    border: 1px solid red;
     display: flex; 
     flex-direction: row;
     gap: 20px;
     align-items: center;
-
+}
+.mainProduct .product{
+    background: white;
+}
+.productContent{
+    
+    h4{
+       font-size: 15px;
+       i{
+        color: rgb(255, 196, 0);
+       } 
+       span{
+        font-weight: 500;
+       }
+    }
+    h3{
+        font-weight: 500;
+        font-size: 17px;
+    }
+    p{
+        font-weight: 400;
+        font-size: 14px;
+    }
+}
+.productimg{
+    background: rgba(128, 128, 128, 0.185);
+    padding: 5px;
+    border-radius: 4px;
 }

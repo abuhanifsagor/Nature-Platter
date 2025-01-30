@@ -89,7 +89,7 @@
               class="card card-compact dropdown-content bg-gradient-to-t from-secondary to-white z-[1] mt-3 w-52 shadow">
               <div class="card-body">
                 <span class="text-lg font-bold">5 Items</span>
-                <span class="text-info text-primarys">Subtotal: 1230 <span>TK</span></span>
+                <span class="text-info text-primarys">Subtotal: 1230 <span>Tk <sub>per kg</sub></span></span>
                 <div class="card-actions">
                   <button class="btn  btn-block">View cart</button>
                 </div>
@@ -245,106 +245,158 @@
 
 <!--TODO: Product Section-->
 
-<section id="product">
+<section id="product" class="bg-secondary">
   <div class="container">
      <h2 class="tittle sm:text-start mb-12 text-3xl font-bold text-primarys text-center">Product</h2>
-      <div class="productWrap flex flex-col gap-5">
+      <div class="productWrap flex flex-col md:flex-row gap-5">
 
-        <div class="product flex flex-col justify-start items-start p-7  h-96 w-full border hover:border-primarys transition-all delay-100 offer ">
+        <div class="product flex flex-col justify-start items-start p-7 md:h-auto  h-96 w-full md:w-96 border hover:border-primarys transition-all delay-100 offer ">
           <h1 class="text-5xl font-bold text-white">  40 % <br> <span class="text-red-500 ml-9">0FF </span>    </h1>
           <p class="text-white">On your first order - </p>
           <button class="btn btn-outline hover:border-transparent hover:bg-primarys border-primarys min-h-10 h-10   text-red-50 hover:bg-primarys hover:text-white ">Buy Now</button>
         </div>
 
-       <div class="mianProduct grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-5">
+       <div class="mainProduct w-full grow grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-5">
         <div class="product">
           <div class="productimg w-14 ">
             <img src="images/vegetables/tomato.webp" alt="">
           </div>
-          <div class="productContent">
-            <h4><i class='bx bxs-star' ></i> <span>4.5</span></h4>
+          <div class="productContent w-full flex items-center justify-between">
+            <div>
+              <h4><i class='bx bxs-star' ></i> <span>4.5</span></h4>
             <h3>Tomato</h3>
-            <p>120TK</p>
+            <p>120Tk <sub>per kg</sub></p>
+            </div>
+            <div class="w-9 h-9  btn min-h-0 min-w-0 rounded-full flex items-center justify-center">
+              <i class='bx bx-cart-alt' ></i>
+            </div>
           </div>
         </div>
+
         <div class="product">
-          <div class="productimg w-14">
-            <img src="images/vegetables/tomato.webp" alt="">
+          <div class="productimg w-14 ">
+            <img src="images/vegetables/broccoli.webp" alt="">
           </div>
-          <div class="productContent">
-            <h4><i class='bx bxs-star' ></i> <span>4.5</span></h4>
-            <h3>Tomato</h3>
-            <p>120TK</p>
+          <div class="productContent w-full flex items-center justify-between">
+            <div>
+              <h4><i class='bx bxs-star' ></i> <span>4.5</span></h4>
+            <h3>Broccoli</h3>
+            <p>200Tk <sub>per kg</sub></p>
+            </div>
+            <div class="w-9 h-9  btn min-h-0 min-w-0 rounded-full flex items-center justify-center">
+              <i class='bx bx-cart-alt' ></i>
+            </div>
           </div>
         </div>
+       
         <div class="product">
-          <div class="productimg w-14">
-            <img src="images/vegetables/tomato.webp" alt="">
+          <div class="productimg w-14 ">
+            <img src="images/vegetables/potato.webp" alt="">
           </div>
-          <div class="productContent">
-            <h4><i class='bx bxs-star' ></i> <span>4.5</span></h4>
-            <h3>Tomato</h3>
-            <p>120TK</p>
+          <div class="productContent w-full flex items-center justify-between">
+            <div>
+              <h4><i class='bx bxs-star' ></i> <span>4.5</span></h4>
+            <h3>Potato</h3>
+            <p>70Tk <sub>per kg</sub></p>
+            </div>
+            <div class="w-9 h-9  btn min-h-0 min-w-0 rounded-full flex items-center justify-center">
+              <i class='bx bx-cart-alt' ></i>
+            </div>
           </div>
         </div>
+
         <div class="product">
-          <div class="productimg w-14">
-            <img src="images/vegetables/tomato.webp" alt="">
+          <div class="productimg w-14 ">
+            <img src="images/vegetables/Okra.webp" alt="">
           </div>
-          <div class="productContent">
-            <h4><i class='bx bxs-star' ></i> <span>4.5</span></h4>
-            <h3>Tomato</h3>
-            <p>120TK</p>
+          <div class="productContent w-full flex items-center justify-between">
+            <div>
+              <h4><i class='bx bxs-star' ></i> <span>4.5</span></h4>
+            <h3>Okra</h3>
+            <p>50Tk <sub>per kg</sub></p>
+            </div>
+            <div class="w-9 h-9  btn min-h-0 min-w-0 rounded-full flex items-center justify-center">
+              <i class='bx bx-cart-alt' ></i>
+            </div>
           </div>
         </div>
+
         <div class="product">
-          <div class="productimg w-14">
-            <img src="images/vegetables/tomato.webp" alt="">
+          <div class="productimg w-14 ">
+            <img src="images/vegetables/Onions.webp" alt="">
           </div>
-          <div class="productContent">
-            <h4><i class='bx bxs-star' ></i> <span>4.5</span></h4>
-            <h3>Tomato</h3>
-            <p>120TK</p>
+          <div class="productContent w-full flex items-center justify-between">
+            <div>
+              <h4><i class='bx bxs-star' ></i> <span>4.5</span></h4>
+            <h3>Onions</h3>
+            <p>125Tk <sub>per kg</sub></p>
+            </div>
+            <div class="w-9 h-9  btn min-h-0 min-w-0 rounded-full flex items-center justify-center">
+              <i class='bx bx-cart-alt' ></i>
+            </div>
           </div>
         </div>
+
         <div class="product">
-          <div class="productimg w-14">
-            <img src="images/vegetables/tomato.webp" alt="">
+          <div class="productimg w-14 ">
+            <img src="images/vegetables/carrots.webp" alt="">
           </div>
-          <div class="productContent">
-            <h4><i class='bx bxs-star' ></i> <span>4.5</span></h4>
-            <h3>Tomato</h3>
-            <p>120TK</p>
+          <div class="productContent w-full flex items-center justify-between">
+            <div>
+              <h4><i class='bx bxs-star' ></i> <span>4.5</span></h4>
+            <h3>Carrots</h3>
+            <p>70Tk <sub>per kg</sub></p>
+            </div>
+            <div class="w-9 h-9  btn min-h-0 min-w-0 rounded-full flex items-center justify-center">
+              <i class='bx bx-cart-alt' ></i>
+            </div>
           </div>
         </div>
+
         <div class="product">
-          <div class="productimg w-14">
-            <img src="images/vegetables/tomato.webp" alt="">
+          <div class="productimg w-14 ">
+            <img src="images/vegetables/cabbage.webp" alt="">
           </div>
-          <div class="productContent">
-            <h4><i class='bx bxs-star' ></i> <span>4.5</span></h4>
-            <h3>Tomato</h3>
-            <p>120TK</p>
+          <div class="productContent w-full flex items-center justify-between">
+            <div>
+              <h4><i class='bx bxs-star' ></i> <span>4.5</span></h4>
+            <h3>Cabbage</h3>
+            <p>40Tk <sub>per kg</sub></p>
+            </div>
+            <div class="w-9 h-9  btn min-h-0 min-w-0 rounded-full flex items-center justify-center">
+              <i class='bx bx-cart-alt' ></i>
+            </div>
           </div>
+          
         </div>
         <div class="product">
-          <div class="productimg w-14">
-            <img src="images/vegetables/tomato.webp" alt="">
+          <div class="productimg w-14 ">
+            <img src="images/vegetables/spinach.webp" alt="">
           </div>
-          <div class="productContent">
-            <h4><i class='bx bxs-star' ></i> <span>4.5</span></h4>
-            <h3>Tomato</h3>
-            <p>120TK</p>
+          <div class="productContent w-full flex items-center justify-between">
+            <div>
+              <h4><i class='bx bxs-star' ></i> <span>4.5</span></h4>
+            <h3>Spinach</h3>
+            <p>40Tk <sub>per kg</sub></p>
+            </div>
+            <div class="w-9 h-9  btn min-h-0 min-w-0 rounded-full flex items-center justify-center">
+              <i class='bx bx-cart-alt' ></i>
+            </div>
           </div>
         </div>
         <div class="product hidden lg:flex">
-          <div class="productimg w-14">
-            <img src="images/vegetables/tomato.webp" alt="">
+          <div class="productimg w-14 ">
+            <img src="images/vegetables/garlic.webp" alt="">
           </div>
-          <div class="productContent">
-            <h4><i class='bx bxs-star' ></i> <span>4.5</span></h4>
-            <h3>Tomato</h3>
-            <p>120TK</p>
+          <div class="productContent w-full flex items-center justify-between">
+            <div>
+              <h4><i class='bx bxs-star' ></i> <span>4.5</span></h4>
+            <h3>Garlic</h3>
+            <p>90TK <sub>per kg</sub></p>
+            </div>
+            <div class="w-9 h-9  btn min-h-0 min-w-0 rounded-full flex items-center justify-center">
+              <i class='bx bx-cart-alt' ></i>
+            </div>
           </div>
         </div>
        </div>
