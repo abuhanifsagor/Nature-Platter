@@ -31,7 +31,8 @@
                         secondary: '#EFEBE3',
                         blacks: '#111111',
                         whites: '#FFFFFF',
-                        subColor: 'rgb(17, 17, 17)'
+                        bodyColor: '#f9f9f9',
+                        subColor: 'rgba(17, 17, 17, .60)'
                     },
                     fontFamily: {
                         'sora': ['Sora', 'sans-serif']
@@ -42,22 +43,23 @@
     </script>
     
 </head>
-<body class="font-sora bg-white">
+<body class="font-sora bg-bodyColor">
 
 <!--INFO: Header Section-->
 
-<header>
-    <div class="navbar sticky top-0 z-50 container sm:pl-4 mx-auto bg-base-100">
+<header class="w-full lg:border-none border-b-2 border-primarys   sticky top-0 z-50 bg-white">
+    <div class="navbar   container sm:pl-4 mx-auto bg-transparent">
         <div class="navbar-start">
           <a>
-            <img class="w-20 " src="images/logo-header.png" alt="">
+            <img class="w-20 hidden sm:block" src="images/logo-header.png" alt="">
+            <img class="w-12 sm:hidden " src="images/logoleaves.png" alt="">
           </a>
         </div>
         <div class="navbar-center hidden lg:flex">
           <ul class="menu  font-semibold text-base menu-horizontal px-1">
             <li ><a>Product</a></li>
             <li><a>Service</a></li>
-            <li><a>Contact</a></li>
+            <li><a>Join</a></li>
 
           </ul>
         </div>
@@ -84,7 +86,7 @@
             </div>
             <div
               tabindex="0"
-              class="card card-compact dropdown-content bg-base-100 z-[1] mt-3 w-52 shadow">
+              class="card card-compact dropdown-content bg-gradient-to-t from-secondary to-white z-[1] mt-3 w-52 shadow">
               <div class="card-body">
                 <span class="text-lg font-bold">5 Items</span>
                 <span class="text-info text-primarys">Subtotal: 1230 <span>TK</span></span>
@@ -143,7 +145,7 @@
               class="menu  menu-sm dropdown-content bg-base-100 rounded-box -translate-x-40  z-[1] mt-3 w-52 p-2 shadow">
               <li><a>Product</a></li>
             <li><a>Service</a></li>
-            <li><a>Contact</a></li>
+            <li><a>join</a></li>
            
          <div class="flex scale-75 flex-col gap-3">
           <button class="btn min-h-10  h-10 btn-outline hover:border-transparent hover:bg-primarys border-primarys  ">Login</button>
@@ -163,9 +165,195 @@
 <!--INFO: Main Section-->
 
 
+<section class="hero pb-0  overflow-hidden bg-gradient-to-t from-secondary to-white ">
+ <div class="container items-center  flex flex-col  text-center   ">
+   <div class="heroContent w-72 sm:w-4/5 md:w-4/6 lg:w-3/5">
+    <h1 class="text-3xl sm:text-5xl font-bold">
+      Freshness  <span class="text-primarys">You Can <br>
+  Count</span> On, Prices You’ll Love!
+    </h1>
+    <p  class="py-4 md:w-4/6 mx-auto text-xs text-slate-500">
+      Shop your daily essentials at unbeatable prices. From fresh produce to pantry staples, we’ve got you covered every day!
+    </p>
+   </div>
+   <div class="heroImage relative sm:w-4/6 md:w-2/4  ">
+    <img src="images/hero-vegetables.png" alt="">
+    <div class="delivery-man sm:w-20 sm:h-20 w-16 h-16">
+      
+    </div>
+    <div class="vagess flex gap-2 flex-col w-12 h-auto">
+      <img src="images/vegetables/cabbage.webp" alt="">
+      <img src="images/vegetables/broccoli.webp" alt="">
+      <img src="images/vegetables/carrots.webp" alt="">
+    </div>
+   </div>
+ </div>
+</section>
 
+<!--TODO: Service Section-->
 
+<section id="service">
+  <div class="container">
+     <h2 class="tittle sm:text-start mb-12 text-3xl font-bold text-primarys text-center">Service</h2>
+      <div class="serviceWrap  grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        
+        <div class="card  bg-gradient-to-t from-secondary to-white w-auto lg:w-full  shadow-xl">
+          <figure class="px-10 pt-10">
+            <img
+              src="images/service.png"
+              alt=""
+              class="rounded-full" />
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title">24/7 Services </h2>
+            <p class="text-subColor">
+              We provide 24/7 services to our customers.
+            </p>
+          </div>
+        </div>
+        <div class="card bg-gradient-to-t from-secondary to-white w-auto lg:w-full shadow-xl">
+          <figure class="px-10 pt-10">
+            <img
+              src="images/delivery.png"
+              alt=""
+              class="rounded-full" />
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title">Fast Delivery </h2>
+            <p class="text-subColor">
+            Fast and secure delivery. Your order will be delivered within 24 hours.
+            </p>
+          </div>
+        </div>
+        <div class="card bg-gradient-to-t from-secondary to-white w-auto lg:w-full shadow-xl">
+          <figure class="px-10 pt-10">
+            <img
+              src="images/healthy.png"
+              alt=""
+              class="rounded-full" />
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title">Healthy Products  </h2>
+            <p class="text-subColor">
+             We take care about your health by providing best quality products.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
 
+<!--TODO: Product Section-->
+
+<section id="product">
+  <div class="container">
+     <h2 class="tittle sm:text-start mb-12 text-3xl font-bold text-primarys text-center">Product</h2>
+      <div class="productWrap flex flex-col gap-5">
+
+        <div class="product flex flex-col justify-start items-start p-7  h-96 w-full border hover:border-primarys transition-all delay-100 offer ">
+          <h1 class="text-5xl font-bold text-white">  40 % <br> <span class="text-red-500 ml-9">0FF </span>    </h1>
+          <p class="text-white">On your first order - </p>
+          <button class="btn btn-outline hover:border-transparent hover:bg-primarys border-primarys min-h-10 h-10   text-red-50 hover:bg-primarys hover:text-white ">Buy Now</button>
+        </div>
+
+       <div class="mianProduct grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-5">
+        <div class="product">
+          <div class="productimg w-14 ">
+            <img src="images/vegetables/tomato.webp" alt="">
+          </div>
+          <div class="productContent">
+            <h4><i class='bx bxs-star' ></i> <span>4.5</span></h4>
+            <h3>Tomato</h3>
+            <p>120TK</p>
+          </div>
+        </div>
+        <div class="product">
+          <div class="productimg w-14">
+            <img src="images/vegetables/tomato.webp" alt="">
+          </div>
+          <div class="productContent">
+            <h4><i class='bx bxs-star' ></i> <span>4.5</span></h4>
+            <h3>Tomato</h3>
+            <p>120TK</p>
+          </div>
+        </div>
+        <div class="product">
+          <div class="productimg w-14">
+            <img src="images/vegetables/tomato.webp" alt="">
+          </div>
+          <div class="productContent">
+            <h4><i class='bx bxs-star' ></i> <span>4.5</span></h4>
+            <h3>Tomato</h3>
+            <p>120TK</p>
+          </div>
+        </div>
+        <div class="product">
+          <div class="productimg w-14">
+            <img src="images/vegetables/tomato.webp" alt="">
+          </div>
+          <div class="productContent">
+            <h4><i class='bx bxs-star' ></i> <span>4.5</span></h4>
+            <h3>Tomato</h3>
+            <p>120TK</p>
+          </div>
+        </div>
+        <div class="product">
+          <div class="productimg w-14">
+            <img src="images/vegetables/tomato.webp" alt="">
+          </div>
+          <div class="productContent">
+            <h4><i class='bx bxs-star' ></i> <span>4.5</span></h4>
+            <h3>Tomato</h3>
+            <p>120TK</p>
+          </div>
+        </div>
+        <div class="product">
+          <div class="productimg w-14">
+            <img src="images/vegetables/tomato.webp" alt="">
+          </div>
+          <div class="productContent">
+            <h4><i class='bx bxs-star' ></i> <span>4.5</span></h4>
+            <h3>Tomato</h3>
+            <p>120TK</p>
+          </div>
+        </div>
+        <div class="product">
+          <div class="productimg w-14">
+            <img src="images/vegetables/tomato.webp" alt="">
+          </div>
+          <div class="productContent">
+            <h4><i class='bx bxs-star' ></i> <span>4.5</span></h4>
+            <h3>Tomato</h3>
+            <p>120TK</p>
+          </div>
+        </div>
+        <div class="product">
+          <div class="productimg w-14">
+            <img src="images/vegetables/tomato.webp" alt="">
+          </div>
+          <div class="productContent">
+            <h4><i class='bx bxs-star' ></i> <span>4.5</span></h4>
+            <h3>Tomato</h3>
+            <p>120TK</p>
+          </div>
+        </div>
+        <div class="product hidden lg:flex">
+          <div class="productimg w-14">
+            <img src="images/vegetables/tomato.webp" alt="">
+          </div>
+          <div class="productContent">
+            <h4><i class='bx bxs-star' ></i> <span>4.5</span></h4>
+            <h3>Tomato</h3>
+            <p>120TK</p>
+          </div>
+        </div>
+       </div>
+
+      </div>
+  </div>
+   
+ </section>
+        
 
 
 

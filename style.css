@@ -1,4 +1,92 @@
 
 section{
     padding: 4rem 1rem;
+    width: 100%;
+}
+.container{
+    margin: 0 auto;
+    max-width: 1440px;
+}
+
+.vagess {
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    bottom: 60px;
+    opacity: 0;
+    z-index: 4;
+    animation: drop 8s linear infinite; 
+
+}
+.vagess img{
+    width: 30px;
+    height: 30px;
+}
+@keyframes drop {
+    0%, 25.5% {  
+       bottom: 60px;
+       opacity: 0;
+    }
+    43.75% {  
+        bottom: -220px;
+        opacity: 1;
+    }
+    50% {  
+        opacity: 0;
+    }
+    100% {  
+        bottom: 60px;
+        opacity: 0;
+    }
+}
+.card{
+    img{
+        background: white;
+        padding: 15px;
+        width: 100px;
+    }
+}
+.delivery-man {
+    position: absolute;
+    right: 0;
+    left: 0;
+    z-index: 5 ;
+    margin: 0 auto;
+    bottom: -3px;
+    background-image: url('images/delivery-man.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    animation: delivery 8s forwards infinite; 
+}
+
+@keyframes delivery {
+    0%, 48.5% {  
+       right: 0%;
+       background-image: url('images/delivery-man.png');
+    }
+    60% { 
+        right: -300%;
+    }
+    100% {  
+        right: 0;
+        background-image: url('images/delivery-man.webp');
+    }
+}
+.offer{
+    background-image: url('images/vegetable-offer.png') ,linear-gradient(321deg, rgba(239,235,227,1) 0%, rgba(23,152,0,1) 100%);
+    background-size: 50%, cover;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
+.product{
+    padding: 16px;
+    border-radius: 12px;
+    border: 1px solid red;
+    display: flex; 
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+
 }
