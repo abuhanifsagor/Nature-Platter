@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nature's Platter</title>
+
+        <!--INFO: Font Awesome-->
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+        <!--INFO: Google Fonts-->
+        <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+
+        <!--INFO: Tailwind CSS-->
+        <script src="https://cdn.tailwindcss.com"></script>
+        
+        <!--INFO: DaisyUI -->
+       <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+
+        <!--INFO: Custom CSS-->
+       <link rel="stylesheet" href="style.css">
+
+
+ 
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primarys: '#179800',
+                        secondary: '#EFEBE3',
+                        blacks: '#111111',
+                        whites: '#FFFFFF',
+                        subColor: 'rgb(17, 17, 17)'
+                    },
+                    fontFamily: {
+                        'sora': ['Sora', 'sans-serif']
+                    }
+                }
+            }
+        };
+    </script>
+    
+</head>
+<body class="font-sora bg-white">
+
+<!--INFO: Header Section-->
+
+<header>
+    <div class="navbar sticky top-0 z-50 container sm:pl-4 mx-auto bg-base-100">
+        <div class="navbar-start">
+          <a>
+            <img class="w-20 " src="images/logo-header.png" alt="">
+          </a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu  font-semibold text-base menu-horizontal px-1">
+            <li ><a>Product</a></li>
+            <li><a>Service</a></li>
+            <li><a>Contact</a></li>
+
+          </ul>
+        </div>
+        <div class="navbar-end">
+          
+          <div class="flex-none">
+          <div class="dropdown dropdown-end">
+            <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+              <div class="indicator">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor">
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                </svg>
+                <span class="badge badge-sm indicator-item">8</span>
+              </div>
+            </div>
+            <div
+              tabindex="0"
+              class="card card-compact dropdown-content bg-base-100 z-[1] mt-3 w-52 shadow">
+              <div class="card-body">
+                <span class="text-lg font-bold">5 Items</span>
+                <span class="text-info text-primarys">Subtotal: 1230 <span>TK</span></span>
+                <div class="card-actions">
+                  <button class="btn  btn-block">View cart</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hidden lg:block">
+          <div class="flex items-center gap-3">
+            <div class="flex-none">
+              <div class="dropdown dropdown-end">
+                <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+                  <div class="indicator">
+                    <i class='bx bx-search text-2xl px-5'></i>
+                  </div>
+                </div>
+                <div
+                  tabindex="0"
+                  class="card card-compact dropdown-content bg-base-100 z-[1] mt-3 w-52 shadow">
+                  <div class="card-body">
+                     <div class="card-actions">
+                      <input type="text" placeholder="Find your favorite food" class="input input-bordered input-success w-full max-w-xs" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          <button class="btn min-h-10  h-10 btn-outline hover:border-transparent hover:bg-primarys border-primarys  ">Login</button>
+          <button class="btn min-h-10 h-10  btn bg-primarys text-white hover:bg-primarys hover:text-white">Register</button>
+
+          </div>
+        </div>
+
+
+        <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16" />
+              </svg>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu  menu-sm dropdown-content bg-base-100 rounded-box -translate-x-40  z-[1] mt-3 w-52 p-2 shadow">
+              <li><a>Product</a></li>
+            <li><a>Service</a></li>
+            <li><a>Contact</a></li>
+           
+         <div class="flex scale-75 flex-col gap-3">
+          <button class="btn min-h-10  h-10 btn-outline hover:border-transparent hover:bg-primarys border-primarys  ">Login</button>
+          <button class="btn min-h-10 h-10  btn bg-primarys text-white hover:bg-primarys hover:text-white">Register</button>
+         </div>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+</header> 
+
+
+
+
+
+<!--INFO: Main Section-->
+
+
+
+
+
+
+
+
+
+<!--INFO: Footer Section-->
+</body>
+</html>
