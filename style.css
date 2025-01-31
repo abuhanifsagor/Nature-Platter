@@ -1,4 +1,21 @@
 
+::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+    display: none;
+}
+
+html {
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+}
+
+body {
+    -ms-overflow-style: none;
+    overflow-y: scroll; 
+    scroll-behavior: smooth;
+}
+
 section{
     padding: 4rem 1rem;
     width: 100%;
@@ -117,4 +134,7 @@ section{
     background: rgba(128, 128, 128, 0.185);
     padding: 5px;
     border-radius: 4px;
+}
+.containers{
+    max-width: 1200px;
 }

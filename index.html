@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nature's Platter</title>
 
-  <!--INFO: Font Awesome-->
+  <!--INFO: boxicons Awesome-->
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
   <!--INFO: Google Fonts-->
@@ -59,9 +59,9 @@
       </div>
       <div class="navbar-center hidden lg:flex">
         <ul class="menu  font-semibold text-base menu-horizontal px-1">
-          <li><a>Product</a></li>
-          <li><a>Service</a></li>
-          <li><a>Join</a></li>
+          <li><a href="#home">home</a></li>
+          <li><a href="#service">Service</a></li>
+          <li><a href="#product">Product</a></li>
 
         </ul>
       </div>
@@ -83,7 +83,7 @@
               class="card card-compact dropdown-content bg-gradient-to-t from-secondary to-white z-[1] mt-3 w-52 shadow">
               <div class="card-body">
                 <span class="text-lg font-bold">5 Items</span>
-                <span class="text-info text-primarys">Subtotal: 1230 <span>Tk <sub>per kg</sub></span></span>
+                <span class="text-info text-primarys">Subtotal: 1230 Tk </span>
                 <div class="card-actions">
                   <button class="btn  btn-block">View cart</button>
                 </div>
@@ -129,9 +129,10 @@
           </div>
           <ul tabindex="0"
             class="menu  menu-sm dropdown-content bg-base-100 rounded-box -translate-x-40  z-[1] mt-3 w-52 p-2 shadow">
-            <li><a>Product</a></li>
-            <li><a>Service</a></li>
-            <li><a>join</a></li>
+            <li><a href="#home">home</a></li>
+            <li><a href="#service">Service</a></li>
+            <li><a href="#product">Product</a></li>
+           
 
             <div class="flex scale-75 flex-col gap-3">
               <button
@@ -153,7 +154,7 @@
   <!--INFO: Main Section-->
 
 
-  <section class="hero pb-0  overflow-hidden bg-gradient-to-t from-secondary to-white ">
+  <section id="home" class="hero pb-0  overflow-hidden bg-gradient-to-t from-secondary to-white ">
     <div class="container items-center  flex flex-col  text-center   ">
       <div class="heroContent w-72 sm:w-4/5 md:w-4/6 lg:w-3/5">
         <h1 class="text-3xl sm:text-5xl font-bold">
@@ -250,7 +251,7 @@
                 <h3>Tomato</h3>
                 <p>120Tk <sub>per kg</sub></p>
               </div>
-              <div class="w-9 h-9  btn min-h-0 min-w-0 rounded-full flex items-center justify-center">
+              <div class="w-9 h-9 hidden md:flex btn min-h-0 min-w-0 rounded-full sm:flex items-center justify-center">
                 <i class='bx bx-cart-alt'></i>
               </div>
             </div>
@@ -266,7 +267,7 @@
                 <h3>Broccoli</h3>
                 <p>200Tk <sub>per kg</sub></p>
               </div>
-              <div class="w-9 h-9  btn min-h-0 min-w-0 rounded-full flex items-center justify-center">
+              <div class="w-9 h-9 hidden md:flex btn min-h-0 min-w-0 rounded-full sm:flex items-center justify-center">
                 <i class='bx bx-cart-alt'></i>
               </div>
             </div>
@@ -282,7 +283,7 @@
                 <h3>Potato</h3>
                 <p>70Tk <sub>per kg</sub></p>
               </div>
-              <div class="w-9 h-9  btn min-h-0 min-w-0 rounded-full flex items-center justify-center">
+              <div class="w-9 h-9 hidden md:flex btn min-h-0 min-w-0 rounded-full sm:flex items-center justify-center">
                 <i class='bx bx-cart-alt'></i>
               </div>
             </div>
@@ -298,7 +299,8 @@
                 <h3>Okra</h3>
                 <p>50Tk <sub>per kg</sub></p>
               </div>
-              <div class="w-9 h-9  btn min-h-0 min-w-0 rounded-full flex items-center justify-center">
+              <div
+                class="w-9 h-9 hidden md:flexhidden md:flex btn min-h-0 min-w-0 rounded-full sm:flex items-center justify-center">
                 <i class='bx bx-cart-alt'></i>
               </div>
             </div>
@@ -314,7 +316,7 @@
                 <h3>Onions</h3>
                 <p>125Tk <sub>per kg</sub></p>
               </div>
-              <div class="w-9 h-9  btn min-h-0 min-w-0 rounded-full flex items-center justify-center">
+              <div class="w-9 h-9 hidden md:flex btn min-h-0 min-w-0 rounded-full smflex items-center justify-center">
                 <i class='bx bx-cart-alt'></i>
               </div>
             </div>
@@ -330,7 +332,7 @@
                 <h3>Carrots</h3>
                 <p>70Tk <sub>per kg</sub></p>
               </div>
-              <div class="w-9 h-9  btn min-h-0 min-w-0 rounded-full flex items-center justify-center">
+              <div class="w-9 h-9 hidden md:flex btn min-h-0 min-w-0 rounded-full sm:flex items-center justify-center">
                 <i class='bx bx-cart-alt'></i>
               </div>
             </div>
@@ -346,7 +348,7 @@
                 <h3>Cabbage</h3>
                 <p>40Tk <sub>per kg</sub></p>
               </div>
-              <div class="w-9 h-9  btn min-h-0 min-w-0 rounded-full flex items-center justify-center">
+              <div class="w-9 h-9 hidden md:flex btn min-h-0 min-w-0 rounded-full sm:flex items-center justify-center">
                 <i class='bx bx-cart-alt'></i>
               </div>
             </div>
@@ -362,7 +364,7 @@
                 <h3>Spinach</h3>
                 <p>40Tk <sub>per kg</sub></p>
               </div>
-              <div class="w-9 h-9  btn min-h-0 min-w-0 rounded-full flex items-center justify-center">
+              <div class="w-9 h-9 hidden md:flex btn min-h-0 min-w-0 rounded-full sm:flex items-center justify-center">
                 <i class='bx bx-cart-alt'></i>
               </div>
             </div>
@@ -377,7 +379,7 @@
                 <h3>Garlic</h3>
                 <p>90TK <sub>per kg</sub></p>
               </div>
-              <div class="w-9 h-9  btn min-h-0 min-w-0 rounded-full flex items-center justify-center">
+              <div class="w-9 h-9 hidden md:flex btn min-h-0 min-w-0 rounded-full sm:flex items-center justify-center">
                 <i class='bx bx-cart-alt'></i>
               </div>
             </div>
@@ -389,8 +391,139 @@
 
   </section>
 
+  <section>
+    <div class="container">
+      <h2 class="tittle mb-12 text-3xl font-bold text-primarys text-start"> FAQ</h2>
+      <div class="collapse collapse-plus bg-base-200">
+        <input type="radio" name="my-accordion-3" checked="checked" />
+        <div class="collapse-title text-xl font-medium">Why Choose Us? 🥦🥕🍅</div>
+        <div class="collapse-content">
+          <p>We provide farm-fresh vegetables, fast delivery, affordable prices, and excellent customer service to
+            ensure a hassle-free shopping experience. 🌱🚀</p>
+        </div>
+      </div>
+      <div class="collapse collapse-plus bg-base-200">
+        <input type="radio" name="my-accordion-3" />
+        <div class="collapse-title text-xl font-medium"> How do I place an order?🛍️</div>
+        <div class="collapse-content">
+          <p>You can easily place an order by browsing our website, adding items to your cart, and proceeding to
+            checkout. Choose your preferred payment method and confirm your order!</p>
+        </div>
+      </div>
+      <div class="collapse collapse-plus bg-base-200">
+        <input type="radio" name="my-accordion-3" />
+        <div class="collapse-title text-xl font-medium">🔄 Can I cancel or modify my order?</div>
+        <div class="collapse-content">
+          <p>Yes, you can cancel or modify your order within [2 hours] after placing it. Contact our support team as
+            soon as possible.</p>
+        </div>
+      </div>
+      <div class="collapse collapse-plus bg-base-200">
+        <input type="radio" name="my-accordion-3" />
+        <div class="collapse-title text-xl font-medium">💳 Can I get a refund if I’m not satisfied?</div>
+        <div class="collapse-content">
+          <p>Yes, we offer refunds or replacements for valid complaints regarding quality or delivery issues.</p>
+        </div>
+      </div>
+      <div class="collapse collapse-plus bg-base-200">
+        <input type="radio" name="my-accordion-3" />
+        <div class="collapse-title text-xl font-medium">🔄 📦 How long does delivery take?</div>
+        <div class="collapse-content">
+          <p>Orders are usually delivered within [24 hours], depending on your location.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="bg-gray-50">
+    <div class="container">
+      <h2 class="tittle mb-12 text-3xl font-bold text-primarys text-start"> Our Happy Clints</h2>
+      <div class="hidden md:flex  justify-end ">
+        <div
+          class="float-right  rounded-full border border-green-600 px-5 py-2 text-base font-semibold text-green-600 transition hover:bg-green-600 hover:text-white md:mt-0">
+          <span class="font-medium"> Read all reviews </span>
+        </div>
+      </div>
+
+      <div class="mt-8 grid grid-cols-1 gap-4 md:grid-cols-2">
+
+        <div class="h-auto  rounded-md bg-white p-6 shadow-lg sm:p-8">
+          <div class="flex gap-0.5 text-yellow-400">
+
+            <i class='bx bxs-star'></i>
+            <i class='bx bxs-star'></i>
+            <i class='bx bxs-star'></i>
+            <i class='bx bxs-star'></i>
+            <i class='bx bxs-star-half'></i>
+          </div>
+
+          <div class="mt-4">
+            <p class="mt-4 leading-relaxed text-gray-700">
+              “I’ve been ordering from here for months now, and I’m always impressed with the freshness of their
+              vegetables. Highly recommended!”
+            </p>
+            <i> - Rica</i>
+          </div>
+        </div>
+        <div class="h-auto  rounded-md bg-white p-6 shadow-lg sm:p-8">
+          <div class="flex gap-0.5 text-yellow-400">
+
+            <i class='bx bxs-star'></i>
+            <i class='bx bxs-star'></i>
+            <i class='bx bxs-star'></i>
+            <i class='bx bxs-star-half'></i>
+            <i class='bx bxs-star-half'></i>
+          </div>
+
+          <div class="mt-4">
+            <p class="mt-4 leading-relaxed text-gray-700">
+              “Affordable & super fresh! My new favorite veggie shop. 🛒”
+            </p>
+            <i> - Ador</i>
+          </div>
+        </div>
+        <div class="h-auto  rounded-md bg-white p-6 shadow-lg sm:p-8">
+          <div class="flex gap-0.5 text-yellow-400">
+
+            <i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i
+              class='bx bxs-star-half'></i><i class='bx bxs-star-half'></i>
+          </div>
+
+          <div class="mt-4">
+            <p class="mt-4 leading-relaxed text-gray-700">
+              "Ordered in the morning, received by evening! Fresh & convenient. 🚛🥕"
+            </p>
+            <i> -Ahmed R.</i>
+          </div>
+        </div>
+        <div class="h-auto  rounded-md bg-white p-6 shadow-lg sm:p-8">
+          <div class="flex gap-0.5 text-yellow-400">
+
+            <i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i
+              class='bx bxs-star-half'></i><i class='bx bxs-star-half'></i>
+          </div>
+
+          <div class="mt-4">
+            <p class="mt-4 leading-relaxed text-gray-700">
+              “ "These veggies stayed fresh for days! Super impressed with the quality. 🍅🥦"”
+            </p>
+            <i> - Sarah K.</i>
+          </div>
+        </div>
+
+      </div>
+      <div class=" sm:hidden  mt-5 flex justify-center ">
+        <div
+          class="float-right  rounded-full border border-green-600 px-5 py-2 text-base font-semibold text-green-600 transition hover:bg-green-600 hover:text-white md:mt-0">
+          <span class="font-medium"> Read all reviews </span>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!--TODO: arival Section-->
-  <section class="pb-32">
+  <section class="pb-60 md:pb-72">
     <div class="container">
       <h2 class="tittle sm:text-start  mb-12 text-3xl font-bold text-primarys text-center">Arrival & Offers</h2>
       <div class="arrival  justify-between flex flex-col lg:flex-row    gap-4">
@@ -404,7 +537,8 @@
             <img class="w-full " src="images/dawat-mock-up.png" alt="">
           </div>
         </div>
-        <div class="arrivalItem sm:h-1/2 lg:w-2/5 items-center  rounded-2xl bg-blue-950 flex p-6  justify-between  gap-2 ">
+        <div
+          class="arrivalItem sm:h-1/2 lg:w-2/5 items-center  rounded-2xl bg-blue-950 flex p-6  justify-between  gap-2 ">
           <div class="arrivalContent text-white">
             <img class="w-16" src="images/india-gate-logo.png" alt="">
             <h3 class="text-xl w-48 p-2 mt-3 rounded-lg text-center bg-blue-900">World’s No.1 Rice</h3>
@@ -415,21 +549,70 @@
           </div>
         </div>
       </div>
+    </div>
   </section>
 
-<!--TODO: subscribe Section-->
+  <!--TODO: subscribe Section-->
 
-<section>
-  <div class="container">
-
-  </div>
-</section>
 
 
 
 
 
   <!--INFO: Footer Section-->
+
+  <footer class=" pt-64 relative  bg-primarys p-10 text-base-100">
+    <div
+      class="mx-auto w-11/12  lg:w-6/12 -top-40 sm:-top-48   absolute  left-1/2 -translate-x-1/2 sm:w-10/12 md:w-8/12  containers  bg-secondary rounded-xl p-4">
+      <div class="subscribe md:flex-row md:py-8 flex flex-col items-center md:gap-10 justify-center gap-4">
+        <div class="w-36 md:w-96">
+          <img src="images/vegetable-busket.png" alt="">
+        </div>
+        <div class="text-center text-subColor md:text-left">
+          <h2 class="text-3xl font-bold ">Get Grocery News</h2>
+          <p class="py-3">Sign up to get exclusive offers</p>
+          <label class="input input-bordered flex items-center gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="h-4 w-4 opacity-70">
+              <path
+                d="M2.5 3A1.5 1.5 0 0 0 1 4.5v.793c.026.009.051.02.076.032L7.674 8.51c.206.1.446.1.652 0l6.598-3.185A.755.755 0 0 1 15 5.293V4.5A1.5 1.5 0 0 0 13.5 3h-11Z" />
+              <path
+                d="M15 6.954 8.978 9.86a2.25 2.25 0 0 1-1.956 0L1 6.954V11.5A1.5 1.5 0 0 0 2.5 13h11a1.5 1.5 0 0 0 1.5-1.5V6.954Z" />
+            </svg>
+            <input type="text" class="grow" placeholder="Email" />
+          </label>
+          <button class="btn mt-3 bg-primarys hover:bg-green-700 text-white">Subscribe</button>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="container footer ">
+      <aside>
+        <img src="images/logo-footer.png" alt="">
+        <p>
+
+          Providing fresh products since 2013
+        </p>
+      </aside>
+      <nav>
+        <h6 class="footer-title">Quick Links</h6>
+        <a class="link link-hover"> About us</a>
+        <a class="link link-hover"> Contact</a>
+        <a class="link link-hover"> Jobs</a>
+        <a class="link link-hover"> Terms of use</a>
+      </nav>
+
+      <nav>
+        <h6 class="footer-title">Follow us</h6>
+        <div class="flex gap-3 text-xl">
+          <a class="link link-hover"><i class='bx bxl-facebook-circle'></i></a>
+          <a class="link link-hover"><i class='bx bxl-instagram'></i></a>
+          <a class="link link-hover"><i class='bx bxl-linkedin'></i></a>
+          <a class="link link-hover"><i class='bx bxl-youtube'></i></a>
+        </div>
+      </nav>
+    </div>
+  </footer>
+
 </body>
 
 </html>
